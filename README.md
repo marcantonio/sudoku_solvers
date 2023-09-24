@@ -1,7 +1,9 @@
+```
 $ python3 bench.py
 v0: f0.0349s
-v1: f0.0652s
-v2: f0.0187s
+v1: f0.0652s <--- is_in() is slower (due to deref?)
+v2: f0.0187s <--- All of the sudoku logic is effectively memoized in the graph constructor
+```
 
 Visualize:
 
