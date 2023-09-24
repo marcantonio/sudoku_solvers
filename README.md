@@ -1,3 +1,7 @@
+- v0 is a simple baseline with using minimal abstraction
+- v1 is the same algorithm but adds more abstraction and is arguable more readable
+- v2 is an implementation using graph coloring
+
 ```
 $ python3 bench.py
 v0: f0.0349s
