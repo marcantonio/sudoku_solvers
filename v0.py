@@ -7,8 +7,8 @@ def print_board(board):
     print("\n")
 
 def current_row(board, idx):
-    rIdx = idx - (idx % 9)
-    return board[rIdx:rIdx+9]
+    row_idx = idx - (idx % 9)
+    return board[row_idx:row_idx+9]
 
 def current_col(board, idx):
     return board[idx%9::9]
@@ -28,7 +28,7 @@ def current_box(board, idx):
         box.extend(board[i:i+3])
     return box
 
-# Check row, col, or box (passed in by getDim())
+# Check row, col, or box (passed in by get_dim())
 def is_in(board, get_dim, idx, ca):
     if ca in get_dim(board, idx):
         return True
@@ -37,7 +37,7 @@ def is_in(board, get_dim, idx, ca):
 
 def row_as_str(board, idx):
     row = get_row(board, idx)
-    colIdx = idx % 9
+    col_idx = idx % 9
     row[col_idx] = "X"
     out = "["
     for x in row:

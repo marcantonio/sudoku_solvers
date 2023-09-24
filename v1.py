@@ -51,12 +51,13 @@ class SudokuPuzzle:
             if DEBUG: print("failed at", self.board.row_as_str())
         return False
 
-    # Check row, col, or box (passed in by getDim())
+    # Check row, col, or box
     def is_in(self, board_dim, ca_value):
-        if ca_value in [c.value for c in board_dim]:
-            return True
-        else:
-            return False
+        for c in board_dim:
+            if ca_value == c.value:
+                return True
+
+        return False
 
     # Checks ca at idx for valid row, col, and box
     def is_valid(self, ca_value):

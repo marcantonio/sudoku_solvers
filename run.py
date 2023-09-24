@@ -30,7 +30,7 @@ else:
 
 # v1
 print("===V1===")
-puzzle = v1.SudokuPuzzle(board.copy())
+puzzle = v1.SudokuPuzzle(board)
 print(puzzle)
 if puzzle.solve():
     print("\033[92mSUCCESS\033[0m")
@@ -40,7 +40,7 @@ else:
 
 # v2
 print("===V2===")
-puzzle = v2.SudokuPuzzle(board.copy())
+puzzle = v2.SudokuPuzzle(board)
 print(puzzle)
 if puzzle.solve():
     print("\033[92mSUCCESS\033[0m")
