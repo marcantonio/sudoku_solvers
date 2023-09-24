@@ -1,5 +1,5 @@
-- v0 is a simple baseline with using minimal abstraction
-- v1 is the same algorithm but adds more abstraction and is arguable more readable
+- v0 is a simple baseline using minimal abstraction
+- v1 is the same algorithm but adds more abstraction and is arguably more readable
 - v2 is an implementation using graph coloring
 
 ```
